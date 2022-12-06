@@ -5,6 +5,10 @@ form {
     justify-content: center;
 }
 
+.text-dark {
+    animation: balanco 4s linear;
+}
+
 .form-container {
     margin: 2rem 0;
 }
@@ -21,7 +25,6 @@ fieldset {
     grid-gap: 1rem;
 
     padding: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.6);
     background-color: #fff;
     border-radius: 0.5rem;
 }
@@ -60,6 +63,21 @@ button:hover {
 .container {
     min-width: 600px;
     max-width: 900px;
+}
+
+@keyframes balanco {
+    0% {
+        transform: scale(.3);
+        border-radius: 100%;
+    }
+
+    50% {
+        transform: scale(.6);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
