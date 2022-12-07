@@ -10,3 +10,15 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 800px) {
+    .carousel {
+      max-width: 600px;
+    }
+}
+
+@media (max-width: 550px) {
+    .carousel {
+      max-width: 400px;
+    }
+}
