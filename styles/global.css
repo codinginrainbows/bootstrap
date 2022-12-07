@@ -1,10 +1,12 @@
   :root {
     box-sizing: border-box;
+    --size-none: 0;
+    --fontSize-standard: 1rem;
   }
 
   * {
-    margin: 0;
-    padding: 0;
+    margin: var(--size-none);
+    padding: var(--size-none);
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
   }
@@ -18,7 +20,7 @@
   }
   
   body, button, textarea, input {
-    font: 400 1rem "Roboto", sans-serif;
+    font: 400 var(--fontSize-standard) "Roboto", sans-serif;
     outline: 0;
   }
   
